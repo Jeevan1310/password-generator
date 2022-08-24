@@ -1,0 +1,47 @@
+*{
+
+    box-sizing: border-box;
+    
+    } background-color: rebeccapurple; align-items: center; width: 400px; box-shadow: 4px 10px rgba(0,0,0,0.6); padding: 1rem; height: 70px;
+    
+    body{
+    
+    margin: 0;
+    
+    font-family: "Poppins", sans-serif;
+    
+    color: #eee;
+    
+    display: flex;
+    
+    justify-content: center; min-height: 100vh;
+    
+    }
+    
+    .pw-container{
+    
+    background-color: rgb(69, 17, 118);
+    
+    }
+    
+    .pw-header {
+    
+    }
+    
+    .pw{
+    
+    width: 100%;
+    
+    background-color: rebeccapurple;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    position: relative;
+    
+    font-size: 1.5rem;
+    
+    padding: 1rem;
+    
+    }
