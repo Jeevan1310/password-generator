@@ -19,23 +19,19 @@ function getUppercase() {
     upperLetters.length)];} 
 
 function getNumber() {
+return numbers[Math.floor(Math.random() * numbers.length)];}
 
-return numbers[Math.floor(Math.random() numbers.length)];
-
-} function getSymbol() {
-
+function getSymbol() {
 return symbol[Math.floor(Math.random() * symbol.length)]; }
 
 function generatePassword() {
-
-const len = lenEl.value; let password = "";
-
-for (let i = 0; i < len; i++) { const x = generateX();
-
-password += x;
-
-} PWEL.innerText = password;
-
+const len = lenEl.value; 
+let password = "";
+for (let i = 0; i < len; i++) { 
+    const x = generateX();
+    password += x;
+    } 
+PWEL.innerText = password;
 }
 function generateX() {
 
