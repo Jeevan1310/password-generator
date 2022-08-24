@@ -60,7 +60,7 @@ function generateX() {
     generateEl.addEventListener("click", generatePassword);    
     copyEl.addEventListener("click", () => {
         const textarea = document.createElement("textarea");
-        const password = PwEl.innerText; 
+        const password = PWEL.innerText; 
         if (!password) {
             return;
         } 
@@ -70,4 +70,7 @@ function generateX() {
         document.execCommand("copy");
         textarea.remove();
         alert("password copied to clipboard");
-    });
+       });
+
+
+// 
