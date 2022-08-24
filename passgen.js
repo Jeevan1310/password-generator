@@ -35,42 +35,39 @@ PWEL.innerText = password;
 }
 function generateX() {
 
-    const xs =
+    const xs = [];
+    if (upperEl.checked) { 
+        xs.push(getUppercase());
+        
+    }
     
-    if (upperEl.checked) { xs.push(getUppercase());
+    if (lowerEl.checked) {
+         xs.push(getLowercase());
     
     }
     
-    if (lowerEl.checked) { xs.push(getLowercase());
+    if (numberEl.checked) {
+         xs.push(getNumber());
+    
+    } if (symbolEl.checked) {
+         xs.push(getSymbol()); }
+    
+    if (xs.length === 0) return "";
+    return xs[Math.floor(Math.random() * xs.length)];
     
     }
     
-    if (numberEl.checked) { xs.push(getNumber());
-    
-    } if (symbolEl.checked) { xs.push(getSymbol()); }
-    
-    if (xs.length === 0) return ""; return xs[Math.floor(Math.random() * xs.length)];
-    
-    }
-    
-    generateEl.addEventListener("click", generatePassword);
-    
+    generateEl.addEventListener("click", generatePassword);    
     copyEl.addEventListener("click", () => {
-    
     const textarea = document.createElement("textarea");
-    
-    const password = PwEl.innerText; if (!password) {
-    
+    const password = PwEl.innerText; 
+    if (!password) {
     return;
-    
-    } textarea.value = password;
-    
+    } 
+    textarea.value = password;
+    document.body.appendChild(textarea);
     textarea.select();
-    
-    document.body.appendChild(textarea); alert("password copied to clipboard");
-    
     document.execCommand("copy");
-    
     textarea.remove();
-    
+    alert("password copied to clipboard");
     });
