@@ -4,3 +4,7 @@
 
 <--Info to be added-->
 
+### About the maintainer
+
+Jeevan Joseph
+BCA student
